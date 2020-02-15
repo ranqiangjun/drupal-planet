@@ -1,0 +1,30 @@
+status: true
+dependencies:
+  config:
+    - field.field.node.drupal_planet.body
+    - node.type.drupal_planet
+  module:
+    - text
+    - user
+  enforced:
+    module:
+      - drupal_planet
+id: node.drupal_planet.default
+targetEntityType: node
+bundle: drupal_planet
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uuid: true

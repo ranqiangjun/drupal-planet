@@ -1,0 +1,19 @@
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - drupal_planet
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Drupal Planet'
+type: drupal_planet
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

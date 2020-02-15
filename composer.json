@@ -1,0 +1,16 @@
+{
+    "name": "drupal/drupal_planet",
+    "type": "drupal-module",
+    "description": "A module to provide a valid RSS feed for Planet Drupal",
+    "keywords": [
+    ],
+    "require": {
+        "drupal/uuid_extra": "1.x-dev"
+    },
+    "homepage": "https://www.drupal.org/project/drupal_planet",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/drupal_planet",
+        "source": "http://cgit.drupalcode.org/drupal_planet"
+    }
+}

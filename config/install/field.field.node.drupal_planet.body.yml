@@ -1,0 +1,24 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.drupal_planet
+  module:
+    - text
+  enforced:
+     module:
+       - drupal_planet
+id: node.drupal_planet.body
+field_name: body
+entity_type: node
+bundle: drupal_planet
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

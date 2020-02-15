@@ -1,0 +1,20 @@
+<?php
+
+use Drupal\field\Entity\FieldStorageConfig;
+
+/**
+ * Implements hook_install().
+ */
+function drupal_planet_install() {
+  // If body field's storage config doesn't exist or is deleted, create it.
+  $field_storage = FieldStorageConfig::loadByName('node', 'body');
+  if ($field_storage === NULL) {
+    $values = [
+      'entity_type' => 'node',
+      'field_name' => 'body',
+      'type' => 'text_with_summary',
+      'cardinality' => 1,
+    ];
+    FieldStorageConfig::create($values)->save();
+  }
+}

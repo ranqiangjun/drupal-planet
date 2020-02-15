@@ -1,0 +1,8 @@
+name: 'Drupal Planet'
+type: module
+description: 'A module to provide a valid RSS feed for Drupal Planet'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Drupal Planet'
+dependencies:
+  - drupal:uuid_extra
